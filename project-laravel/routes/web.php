@@ -41,8 +41,8 @@ Route::get('user1/{name?}', function ($name = null){
     return $name? "Hallo, $name!" : "Hallo";//menampilkan "hallo" 
 });
 //route dengan parameter opsional,ada nilai default'hesti'
-Route::get('user2/{name?}', function ($name = 'Hesti'){
-    return $name? "Hallo, $name!" : "Hallo Hesti";
+Route::get('user2/{name?}', function ($name = 'Michelia'){
+    return $name? "Hallo, $name!" : "Hallo Michelia";
 });
 //route dgn parameter wajib 'name', harus huruf
 Route::get('user3/{name}', function($name){
