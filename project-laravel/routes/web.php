@@ -73,8 +73,8 @@ Route::get('user6/profile', function(){
 Route::get('user7/profile', ['ProfileController@show'])->name('profile');
 
 
-$url = route('profile');
-return redirect()->route('profile');
+//$url = route('profile');
+//return redirect()->route('profile');
 
 Route::get('/redirect-profile', function(){
     return redirect()->route('profile', ['id'=>1, 'photos'=>'yes']);
